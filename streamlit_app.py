@@ -14,7 +14,7 @@ import os
 
 st.set_page_config(page_title="Penguin Species Predictor", layout="centered")
 
-MODEL_PATH = r"C:\Users\Machine learning Projects\Penguin species classification\models\optimized_penguin_model.pkl"
+MODEL_PATH = os.path.join(os.path.dirname(__file__), "optimized_penguin_model.pkl")
 
 st.title(" Penguin Species Predictor")
 st.write("Predict the species of penguins (Adélie, Chinstrap, Gentoo) using physical measurements and metadata.")
